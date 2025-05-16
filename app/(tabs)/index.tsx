@@ -1,10 +1,12 @@
+import ScoreCard from '@/components/ScoreCard';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 export default function ScoreScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Score Screen</Text>
+      <ScoreCard
+      />
     </View>
   );
 }
@@ -15,9 +17,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#fff',
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold',
   },
 });
