@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function ScoreScreen() {
+export default function SettingsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Score Screen</Text>
+      <Text style={styles.text}>Coming soon!</Text>
     </View>
   );
 }
