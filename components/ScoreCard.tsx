@@ -44,6 +44,7 @@ const ScoreCard: React.FC<ScoreCardProps> = () => {
           <TextInput
             key={player.playerName}
             value={String(player.birdPoints)}
+            returnKeyType='done'
             onChangeText={(text) => {
               const updatedPlayers = [...scoreCardData.players];
               updatedPlayers[index].birdPoints = parseInt(text) || 0;
@@ -57,6 +58,7 @@ const ScoreCard: React.FC<ScoreCardProps> = () => {
           <TextInput
             key={player.playerName}
             value={String(player.bonusPoints)}
+            returnKeyType='done'
             onChangeText={(text) => {
               const updatedPlayers = [...scoreCardData.players];
               updatedPlayers[index].bonusPoints = parseInt(text) || 0;
@@ -70,6 +72,7 @@ const ScoreCard: React.FC<ScoreCardProps> = () => {
           <TextInput
             key={player.playerName}
             value={String(player.endOfRoundGoals)}
+            returnKeyType='done'
             onChangeText={(text) => {
               const updatedPlayers = [...scoreCardData.players];
               updatedPlayers[index].endOfRoundGoals = parseInt(text) || 0;
@@ -83,6 +86,7 @@ const ScoreCard: React.FC<ScoreCardProps> = () => {
           <TextInput
             key={player.playerName}
             value={String(player.eggs)}
+            returnKeyType='done'
             onChangeText={(text) => {
               const updatedPlayers = [...scoreCardData.players];
               updatedPlayers[index].eggs = parseInt(text) || 0;
@@ -96,6 +100,7 @@ const ScoreCard: React.FC<ScoreCardProps> = () => {
           <TextInput
             key={player.playerName}
             value={String(player.foodOnCards)}
+            returnKeyType='done'
             onChangeText={(text) => {
               const updatedPlayers = [...scoreCardData.players];
               updatedPlayers[index].foodOnCards = parseInt(text) || 0;
@@ -109,6 +114,7 @@ const ScoreCard: React.FC<ScoreCardProps> = () => {
           <TextInput
             key={player.playerName}
             value={String(player.tuckedCards)}
+            returnKeyType='done'
             onChangeText={(text) => {
               const updatedPlayers = [...scoreCardData.players];
               updatedPlayers[index].tuckedCards = parseInt(text) || 0;
